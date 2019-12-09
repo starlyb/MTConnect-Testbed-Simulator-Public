@@ -1,0 +1,3 @@
+ORGS=20
+MACHS=[2, 10]
+seed=0

@@ -1,0 +1,3 @@
+ORGS=4
+MACHS=[1, 6]
+seed=98

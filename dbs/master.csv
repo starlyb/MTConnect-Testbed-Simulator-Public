@@ -1,0 +1,5 @@
+,latitude,longitude,city,state,population,names,machines,temperature,atmosphere,CapacityUtil,agentPorts
+364,46.78667189999999,-92.10048520000001,Duluth,Minnesota,86128,Org 1,3,7,Hot,100,11500
+588,37.322997799999996,-122.03218229999999,Cupertino,California,60189,Org 2,1,-12,Shiny,121,14000
+851,41.5067003,-90.5151342,Moline,Illinois,43116,Org 3,2,3,Dark,92,9400
+44,37.8043637,-122.27111370000002,Oakland,California,406253,Org 4,3,-11,Shiny,107,17300

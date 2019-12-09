@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_45f961e4ebd54394ad25b33e85eaf541 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_45f961e4ebd54394ad25b33e85eaf541" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_45f961e4ebd54394ad25b33e85eaf541 = L.map(
+        'map_45f961e4ebd54394ad25b33e85eaf541', {
+        center: [39.0902, -98.7129],
+        zoom: 5,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_ca6cdac6deda4dda9661f6c4c762e532 = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_45f961e4ebd54394ad25b33e85eaf541);
+    
+        var marker_831b2a415cdf4b8a96a3edf97a343829 = L.marker(
+            [39.3454673, -84.56031870000002],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_45f961e4ebd54394ad25b33e85eaf541);
+        
+    
+
+                var icon_af74bd653ced4ad5b1765621ce194c60 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_831b2a415cdf4b8a96a3edf97a343829.setIcon(icon_af74bd653ced4ad5b1765621ce194c60);
+            
+    
+            var popup_158f71134887481aa3651e563885e83e = L.popup({maxWidth: '2650'
+            
+            });
+
+            
+                var html_6de96c0cfd7d444595090086c9bd39bf = $(`<div id="html_6de96c0cfd7d444595090086c9bd39bf" style="width: 300.0px; height: 100.0%;"><h4><span style="color: #3366ff;">Org 1 - port : 19500</span></h4> <table style="height: 30px;" width="284"> <tbody> <tr> <td style="width: 169px;"> <h4>MTConnect :</h4> </td> <td style="width: 99px;"><h6><a href="http://starly5.ie.ncsu.edu:19500/current" target="_blank" rel="noopener">Current |</a><a href="http://starly5.ie.ncsu.edu:19500/probe" target="_blank" rel="noopener"> Probe</h6></a></td> </tr> <tr> <td style="width: 169px;"> <h4>Total Machines: </td> <td style="width: 99px;"><b>4</b></td> </tr> <tr> <td style="width: 169px;"> <h4>Capacity Utilization: </td> <td style="width: 99px;"><b>44%</h4></b></td> </tr> </tbody> </table></div>`)[0];
+                popup_158f71134887481aa3651e563885e83e.setContent(html_6de96c0cfd7d444595090086c9bd39bf);
+            
+
+            marker_831b2a415cdf4b8a96a3edf97a343829.bindPopup(popup_158f71134887481aa3651e563885e83e)
+            ;
+
+            
+        
+    
+        var marker_16c4157a7a5a4bcba8cb5a327edd3988 = L.marker(
+            [33.7475203, -116.9719684],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_45f961e4ebd54394ad25b33e85eaf541);
+        
+    
+
+                var icon_ab6acfb12ca243cc97e8e96b90eef350 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_16c4157a7a5a4bcba8cb5a327edd3988.setIcon(icon_ab6acfb12ca243cc97e8e96b90eef350);
+            
+    
+            var popup_6480c97dca9d42b9bd899b49f8689641 = L.popup({maxWidth: '2650'
+            
+            });
+
+            
+                var html_43b39a970dba4838933edc94e07bee63 = $(`<div id="html_43b39a970dba4838933edc94e07bee63" style="width: 300.0px; height: 100.0%;"><h4><span style="color: #3366ff;">Org 2 - port : 13200</span></h4> <table style="height: 30px;" width="284"> <tbody> <tr> <td style="width: 169px;"> <h4>MTConnect :</h4> </td> <td style="width: 99px;"><h6><a href="http://starly5.ie.ncsu.edu:13200/current" target="_blank" rel="noopener">Current |</a><a href="http://starly5.ie.ncsu.edu:13200/probe" target="_blank" rel="noopener"> Probe</h6></a></td> </tr> <tr> <td style="width: 169px;"> <h4>Total Machines: </td> <td style="width: 99px;"><b>2</b></td> </tr> <tr> <td style="width: 169px;"> <h4>Capacity Utilization: </td> <td style="width: 99px;"><b>32%</h4></b></td> </tr> </tbody> </table></div>`)[0];
+                popup_6480c97dca9d42b9bd899b49f8689641.setContent(html_43b39a970dba4838933edc94e07bee63);
+            
+
+            marker_16c4157a7a5a4bcba8cb5a327edd3988.bindPopup(popup_6480c97dca9d42b9bd899b49f8689641)
+            ;
+
+            
+        
+    
+        var marker_4afa7aec6a4c41588865c745d76afd0e = L.marker(
+            [41.5931049, -81.5267873],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_45f961e4ebd54394ad25b33e85eaf541);
+        
+    
+
+                var icon_b1d2b12783fa4630beba0902bac159c6 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4afa7aec6a4c41588865c745d76afd0e.setIcon(icon_b1d2b12783fa4630beba0902bac159c6);
+            
+    
+            var popup_0508c54b82bc4cf186fbc420f5d998a1 = L.popup({maxWidth: '2650'
+            
+            });
+
+            
+                var html_d27f18a5d37b499fbc19d07f0eed0d39 = $(`<div id="html_d27f18a5d37b499fbc19d07f0eed0d39" style="width: 300.0px; height: 100.0%;"><h4><span style="color: #3366ff;">Org 3 - port : 12100</span></h4> <table style="height: 30px;" width="284"> <tbody> <tr> <td style="width: 169px;"> <h4>MTConnect :</h4> </td> <td style="width: 99px;"><h6><a href="http://starly5.ie.ncsu.edu:12100/current" target="_blank" rel="noopener">Current |</a><a href="http://starly5.ie.ncsu.edu:12100/probe" target="_blank" rel="noopener"> Probe</h6></a></td> </tr> <tr> <td style="width: 169px;"> <h4>Total Machines: </td> <td style="width: 99px;"><b>3</b></td> </tr> <tr> <td style="width: 169px;"> <h4>Capacity Utilization: </td> <td style="width: 99px;"><b>32%</h4></b></td> </tr> </tbody> </table></div>`)[0];
+                popup_0508c54b82bc4cf186fbc420f5d998a1.setContent(html_d27f18a5d37b499fbc19d07f0eed0d39);
+            
+
+            marker_4afa7aec6a4c41588865c745d76afd0e.bindPopup(popup_0508c54b82bc4cf186fbc420f5d998a1)
+            ;
+
+            
+        
+    
+        var marker_3bf7897fe8de4941abcd128a2be046c7 = L.marker(
+            [42.2411344, -88.31619649999998],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_45f961e4ebd54394ad25b33e85eaf541);
+        
+    
+
+                var icon_156567e0c59f4e11966fbcbc4d868526 = L.AwesomeMarkers.icon({
+                    icon: 'star',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3bf7897fe8de4941abcd128a2be046c7.setIcon(icon_156567e0c59f4e11966fbcbc4d868526);
+            
+    
+            var popup_2c89103e99ea44a58b8b671918b9f5ad = L.popup({maxWidth: '2650'
+            
+            });
+
+            
+                var html_327e36e251ee485c9e3fc90d3e16c5b2 = $(`<div id="html_327e36e251ee485c9e3fc90d3e16c5b2" style="width: 300.0px; height: 100.0%;"><h4><span style="color: #3366ff;">Org 4 - port : 18300</span></h4> <table style="height: 30px;" width="284"> <tbody> <tr> <td style="width: 169px;"> <h4>MTConnect :</h4> </td> <td style="width: 99px;"><h6><a href="http://starly5.ie.ncsu.edu:18300/current" target="_blank" rel="noopener">Current |</a><a href="http://starly5.ie.ncsu.edu:18300/probe" target="_blank" rel="noopener"> Probe</h6></a></td> </tr> <tr> <td style="width: 169px;"> <h4>Total Machines: </td> <td style="width: 99px;"><b>6</b></td> </tr> <tr> <td style="width: 169px;"> <h4>Capacity Utilization: </td> <td style="width: 99px;"><b>100%</h4></b></td> </tr> </tbody> </table></div>`)[0];
+                popup_2c89103e99ea44a58b8b671918b9f5ad.setContent(html_327e36e251ee485c9e3fc90d3e16c5b2);
+            
+
+            marker_3bf7897fe8de4941abcd128a2be046c7.bindPopup(popup_2c89103e99ea44a58b8b671918b9f5ad)
+            ;
+
+            
+        
+    
+        var marker_599ab14c26f142799f0465a19b1f222e = L.marker(
+            [37.0965278, -113.5684164],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_45f961e4ebd54394ad25b33e85eaf541);
+        
+    
+
+                var icon_58ad8bf30a6a4801962bed77702236ac = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_599ab14c26f142799f0465a19b1f222e.setIcon(icon_58ad8bf30a6a4801962bed77702236ac);
+            
+    
+            var popup_46bbc0a9e282433dac91ff2c9ad260ca = L.popup({maxWidth: '2650'
+            
+            });
+
+            
+                var html_5a79585af0694aa792b63de0112812cc = $(`<div id="html_5a79585af0694aa792b63de0112812cc" style="width: 300.0px; height: 100.0%;"><h4><span style="color: #3366ff;">Org 5 - port : 13100</span></h4> <table style="height: 30px;" width="284"> <tbody> <tr> <td style="width: 169px;"> <h4>MTConnect :</h4> </td> <td style="width: 99px;"><h6><a href="http://starly5.ie.ncsu.edu:13100/current" target="_blank" rel="noopener">Current |</a><a href="http://starly5.ie.ncsu.edu:13100/probe" target="_blank" rel="noopener"> Probe</h6></a></td> </tr> <tr> <td style="width: 169px;"> <h4>Total Machines: </td> <td style="width: 99px;"><b>3</b></td> </tr> <tr> <td style="width: 169px;"> <h4>Capacity Utilization: </td> <td style="width: 99px;"><b>98%</h4></b></td> </tr> </tbody> </table></div>`)[0];
+                popup_46bbc0a9e282433dac91ff2c9ad260ca.setContent(html_5a79585af0694aa792b63de0112812cc);
+            
+
+            marker_599ab14c26f142799f0465a19b1f222e.bindPopup(popup_46bbc0a9e282433dac91ff2c9ad260ca)
+            ;
+
+            
+        
+    
+        var marker_952b96ad4e274a21bb55316137f91b6c = L.marker(
+            [41.25236339999999, -95.99798829999999],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_45f961e4ebd54394ad25b33e85eaf541);
+        
+    
+
+                var icon_0a5a90ec1de2473fb493c4498e08a377 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_952b96ad4e274a21bb55316137f91b6c.setIcon(icon_0a5a90ec1de2473fb493c4498e08a377);
+            
+    
+            var popup_99f0560d8c3245d0b65380aee60a638c = L.popup({maxWidth: '2650'
+            
+            });
+
+            
+                var html_f697c2235f484851ac81c530f75e7852 = $(`<div id="html_f697c2235f484851ac81c530f75e7852" style="width: 300.0px; height: 100.0%;"><h4><span style="color: #3366ff;">Org 6 - port : 18000</span></h4> <table style="height: 30px;" width="284"> <tbody> <tr> <td style="width: 169px;"> <h4>MTConnect :</h4> </td> <td style="width: 99px;"><h6><a href="http://starly5.ie.ncsu.edu:18000/current" target="_blank" rel="noopener">Current |</a><a href="http://starly5.ie.ncsu.edu:18000/probe" target="_blank" rel="noopener"> Probe</h6></a></td> </tr> <tr> <td style="width: 169px;"> <h4>Total Machines: </td> <td style="width: 99px;"><b>5</b></td> </tr> <tr> <td style="width: 169px;"> <h4>Capacity Utilization: </td> <td style="width: 99px;"><b>34%</h4></b></td> </tr> </tbody> </table></div>`)[0];
+                popup_99f0560d8c3245d0b65380aee60a638c.setContent(html_f697c2235f484851ac81c530f75e7852);
+            
+
+            marker_952b96ad4e274a21bb55316137f91b6c.bindPopup(popup_99f0560d8c3245d0b65380aee60a638c)
+            ;
+
+            
+        
+    
+        var marker_41cce37678c34fce93b660e810534db3 = L.marker(
+            [33.4936391, -117.1483648],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_45f961e4ebd54394ad25b33e85eaf541);
+        
+    
+
+                var icon_7bf4cbf8a8614ed39e9bf5850e8060c3 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_41cce37678c34fce93b660e810534db3.setIcon(icon_7bf4cbf8a8614ed39e9bf5850e8060c3);
+            
+    
+            var popup_ddfcbabb9c844b42ae2705fbb639345b = L.popup({maxWidth: '2650'
+            
+            });
+
+            
+                var html_89882988722549509fe18163affbe603 = $(`<div id="html_89882988722549509fe18163affbe603" style="width: 300.0px; height: 100.0%;"><h4><span style="color: #3366ff;">Org 7 - port : 9800</span></h4> <table style="height: 30px;" width="284"> <tbody> <tr> <td style="width: 169px;"> <h4>MTConnect :</h4> </td> <td style="width: 99px;"><h6><a href="http://starly5.ie.ncsu.edu:9800/current" target="_blank" rel="noopener">Current |</a><a href="http://starly5.ie.ncsu.edu:9800/probe" target="_blank" rel="noopener"> Probe</h6></a></td> </tr> <tr> <td style="width: 169px;"> <h4>Total Machines: </td> <td style="width: 99px;"><b>8</b></td> </tr> <tr> <td style="width: 169px;"> <h4>Capacity Utilization: </td> <td style="width: 99px;"><b>26%</h4></b></td> </tr> </tbody> </table></div>`)[0];
+                popup_ddfcbabb9c844b42ae2705fbb639345b.setContent(html_89882988722549509fe18163affbe603);
+            
+
+            marker_41cce37678c34fce93b660e810534db3.bindPopup(popup_ddfcbabb9c844b42ae2705fbb639345b)
+            ;
+
+            
+        
+    
+        var marker_f2f36b66808c4d3dbf73cc74aa0107a3 = L.marker(
+            [41.6155909, -87.5294871],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_45f961e4ebd54394ad25b33e85eaf541);
+        
+    
+
+                var icon_0258a431d184490383cb4e16e50c9ee2 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f2f36b66808c4d3dbf73cc74aa0107a3.setIcon(icon_0258a431d184490383cb4e16e50c9ee2);
+            
+    
+            var popup_621c4b32b4dc40268e5bb7a6729753bf = L.popup({maxWidth: '2650'
+            
+            });
+
+            
+                var html_a519eb9e166d43f09736f4c7d7917392 = $(`<div id="html_a519eb9e166d43f09736f4c7d7917392" style="width: 300.0px; height: 100.0%;"><h4><span style="color: #3366ff;">Org 8 - port : 11400</span></h4> <table style="height: 30px;" width="284"> <tbody> <tr> <td style="width: 169px;"> <h4>MTConnect :</h4> </td> <td style="width: 99px;"><h6><a href="http://starly5.ie.ncsu.edu:11400/current" target="_blank" rel="noopener">Current |</a><a href="http://starly5.ie.ncsu.edu:11400/probe" target="_blank" rel="noopener"> Probe</h6></a></td> </tr> <tr> <td style="width: 169px;"> <h4>Total Machines: </td> <td style="width: 99px;"><b>8</b></td> </tr> <tr> <td style="width: 169px;"> <h4>Capacity Utilization: </td> <td style="width: 99px;"><b>0%</h4></b></td> </tr> </tbody> </table></div>`)[0];
+                popup_621c4b32b4dc40268e5bb7a6729753bf.setContent(html_a519eb9e166d43f09736f4c7d7917392);
+            
+
+            marker_f2f36b66808c4d3dbf73cc74aa0107a3.bindPopup(popup_621c4b32b4dc40268e5bb7a6729753bf)
+            ;
+
+            
+        
+    
+        var marker_cbe9d22d685145919176507d670cfea7 = L.marker(
+            [34.769535999999995, -92.2670941],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_45f961e4ebd54394ad25b33e85eaf541);
+        
+    
+
+                var icon_6631b655f643498095e30a7cf68957f0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_cbe9d22d685145919176507d670cfea7.setIcon(icon_6631b655f643498095e30a7cf68957f0);
+            
+    
+            var popup_89c402d6cd824cdc8d1c5c9749d0b09e = L.popup({maxWidth: '2650'
+            
+            });
+
+            
+                var html_a15867f357b6497d8c6d82ff94a958b7 = $(`<div id="html_a15867f357b6497d8c6d82ff94a958b7" style="width: 300.0px; height: 100.0%;"><h4><span style="color: #3366ff;">Org 9 - port : 16200</span></h4> <table style="height: 30px;" width="284"> <tbody> <tr> <td style="width: 169px;"> <h4>MTConnect :</h4> </td> <td style="width: 99px;"><h6><a href="http://starly5.ie.ncsu.edu:16200/current" target="_blank" rel="noopener">Current |</a><a href="http://starly5.ie.ncsu.edu:16200/probe" target="_blank" rel="noopener"> Probe</h6></a></td> </tr> <tr> <td style="width: 169px;"> <h4>Total Machines: </td> <td style="width: 99px;"><b>4</b></td> </tr> <tr> <td style="width: 169px;"> <h4>Capacity Utilization: </td> <td style="width: 99px;"><b>88%</h4></b></td> </tr> </tbody> </table></div>`)[0];
+                popup_89c402d6cd824cdc8d1c5c9749d0b09e.setContent(html_a15867f357b6497d8c6d82ff94a958b7);
+            
+
+            marker_cbe9d22d685145919176507d670cfea7.bindPopup(popup_89c402d6cd824cdc8d1c5c9749d0b09e)
+            ;
+
+            
+        
+    
+        var marker_33ed62410b264decbda8f4551c48ca34 = L.marker(
+            [42.492786, -92.3425775],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_45f961e4ebd54394ad25b33e85eaf541);
+        
+    
+
+                var icon_13fb152674f9411eb2f56a651bbcc496 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_33ed62410b264decbda8f4551c48ca34.setIcon(icon_13fb152674f9411eb2f56a651bbcc496);
+            
+    
+            var popup_f5e4bdeaa9f349c796bc1f68a358e2c4 = L.popup({maxWidth: '2650'
+            
+            });
+
+            
+                var html_463bf7ce4ff3418b8fb0821fe6881f0a = $(`<div id="html_463bf7ce4ff3418b8fb0821fe6881f0a" style="width: 300.0px; height: 100.0%;"><h4><span style="color: #3366ff;">Org 10 - port : 11800</span></h4> <table style="height: 30px;" width="284"> <tbody> <tr> <td style="width: 169px;"> <h4>MTConnect :</h4> </td> <td style="width: 99px;"><h6><a href="http://starly5.ie.ncsu.edu:11800/current" target="_blank" rel="noopener">Current |</a><a href="http://starly5.ie.ncsu.edu:11800/probe" target="_blank" rel="noopener"> Probe</h6></a></td> </tr> <tr> <td style="width: 169px;"> <h4>Total Machines: </td> <td style="width: 99px;"><b>6</b></td> </tr> <tr> <td style="width: 169px;"> <h4>Capacity Utilization: </td> <td style="width: 99px;"><b>0%</h4></b></td> </tr> </tbody> </table></div>`)[0];
+                popup_f5e4bdeaa9f349c796bc1f68a358e2c4.setContent(html_463bf7ce4ff3418b8fb0821fe6881f0a);
+            
+
+            marker_33ed62410b264decbda8f4551c48ca34.bindPopup(popup_f5e4bdeaa9f349c796bc1f68a358e2c4)
+            ;
+
+            
+        
+    
+        var marker_d1e78ed280c94ed496b38b1792b583d1 = L.marker(
+            [29.5844524, -81.20786989999998],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_45f961e4ebd54394ad25b33e85eaf541);
+        
+    
+
+                var icon_01645e8005074d6f9f32a64389124795 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d1e78ed280c94ed496b38b1792b583d1.setIcon(icon_01645e8005074d6f9f32a64389124795);
+            
+    
+            var popup_5aa6aadb547c45bea0ecc14798a5ef2e = L.popup({maxWidth: '2650'
+            
+            });
+
+            
+                var html_3e1f572344de41fa9886d104cca7ac0f = $(`<div id="html_3e1f572344de41fa9886d104cca7ac0f" style="width: 300.0px; height: 100.0%;"><h4><span style="color: #3366ff;">Org 11 - port : 12000</span></h4> <table style="height: 30px;" width="284"> <tbody> <tr> <td style="width: 169px;"> <h4>MTConnect :</h4> </td> <td style="width: 99px;"><h6><a href="http://starly5.ie.ncsu.edu:12000/current" target="_blank" rel="noopener">Current |</a><a href="http://starly5.ie.ncsu.edu:12000/probe" target="_blank" rel="noopener"> Probe</h6></a></td> </tr> <tr> <td style="width: 169px;"> <h4>Total Machines: </td> <td style="width: 99px;"><b>3</b></td> </tr> <tr> <td style="width: 169px;"> <h4>Capacity Utilization: </td> <td style="width: 99px;"><b>0%</h4></b></td> </tr> </tbody> </table></div>`)[0];
+                popup_5aa6aadb547c45bea0ecc14798a5ef2e.setContent(html_3e1f572344de41fa9886d104cca7ac0f);
+            
+
+            marker_d1e78ed280c94ed496b38b1792b583d1.bindPopup(popup_5aa6aadb547c45bea0ecc14798a5ef2e)
+            ;
+
+            
+        
+    
+        var marker_60d4fc79dadf40989f22a6bd56fc644b = L.marker(
+            [35.1359386, -114.5285981],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_45f961e4ebd54394ad25b33e85eaf541);
+        
+    
+
+                var icon_835b3a33fc1d4a4fb574c4ad81a520b2 = L.AwesomeMarkers.icon({
+                    icon: 'star',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_60d4fc79dadf40989f22a6bd56fc644b.setIcon(icon_835b3a33fc1d4a4fb574c4ad81a520b2);
+            
+    
+            var popup_f9d59eb4a22a4b37a6cfa2c06c986186 = L.popup({maxWidth: '2650'
+            
+            });
+
+            
+                var html_0a6f33f6b34b4fa58eabbbef8c4fe617 = $(`<div id="html_0a6f33f6b34b4fa58eabbbef8c4fe617" style="width: 300.0px; height: 100.0%;"><h4><span style="color: #3366ff;">Org 12 - port : 19200</span></h4> <table style="height: 30px;" width="284"> <tbody> <tr> <td style="width: 169px;"> <h4>MTConnect :</h4> </td> <td style="width: 99px;"><h6><a href="http://starly5.ie.ncsu.edu:19200/current" target="_blank" rel="noopener">Current |</a><a href="http://starly5.ie.ncsu.edu:19200/probe" target="_blank" rel="noopener"> Probe</h6></a></td> </tr> <tr> <td style="width: 169px;"> <h4>Total Machines: </td> <td style="width: 99px;"><b>2</b></td> </tr> <tr> <td style="width: 169px;"> <h4>Capacity Utilization: </td> <td style="width: 99px;"><b>100%</h4></b></td> </tr> </tbody> </table></div>`)[0];
+                popup_f9d59eb4a22a4b37a6cfa2c06c986186.setContent(html_0a6f33f6b34b4fa58eabbbef8c4fe617);
+            
+
+            marker_60d4fc79dadf40989f22a6bd56fc644b.bindPopup(popup_f9d59eb4a22a4b37a6cfa2c06c986186)
+            ;
+
+            
+        
+    
+        var marker_c5ba1088b6ad4c26a0a9659f6e9b93d7 = L.marker(
+            [48.23296679999999, -101.2922906],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_45f961e4ebd54394ad25b33e85eaf541);
+        
+    
+
+                var icon_088f6979287a449ca1649abed846533e = L.AwesomeMarkers.icon({
+                    icon: 'star',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c5ba1088b6ad4c26a0a9659f6e9b93d7.setIcon(icon_088f6979287a449ca1649abed846533e);
+            
+    
+            var popup_6191f8758f47451dac4f901ac20229cc = L.popup({maxWidth: '2650'
+            
+            });
+
+            
+                var html_d1a040b171154f3099310cead992eddc = $(`<div id="html_d1a040b171154f3099310cead992eddc" style="width: 300.0px; height: 100.0%;"><h4><span style="color: #3366ff;">Org 13 - port : 10800</span></h4> <table style="height: 30px;" width="284"> <tbody> <tr> <td style="width: 169px;"> <h4>MTConnect :</h4> </td> <td style="width: 99px;"><h6><a href="http://starly5.ie.ncsu.edu:10800/current" target="_blank" rel="noopener">Current |</a><a href="http://starly5.ie.ncsu.edu:10800/probe" target="_blank" rel="noopener"> Probe</h6></a></td> </tr> <tr> <td style="width: 169px;"> <h4>Total Machines: </td> <td style="width: 99px;"><b>7</b></td> </tr> <tr> <td style="width: 169px;"> <h4>Capacity Utilization: </td> <td style="width: 99px;"><b>100%</h4></b></td> </tr> </tbody> </table></div>`)[0];
+                popup_6191f8758f47451dac4f901ac20229cc.setContent(html_d1a040b171154f3099310cead992eddc);
+            
+
+            marker_c5ba1088b6ad4c26a0a9659f6e9b93d7.bindPopup(popup_6191f8758f47451dac4f901ac20229cc)
+            ;
+
+            
+        
+    
+        var marker_920d246a4bd64d94b9028a45d5f16f10 = L.marker(
+            [25.9331488, -80.1625463],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_45f961e4ebd54394ad25b33e85eaf541);
+        
+    
+
+                var icon_d8a5709719514302ad51734e0a5d7f29 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_920d246a4bd64d94b9028a45d5f16f10.setIcon(icon_d8a5709719514302ad51734e0a5d7f29);
+            
+    
+            var popup_b4f01e6e06e14f32b8ad94ecb4cbdfa3 = L.popup({maxWidth: '2650'
+            
+            });
+
+            
+                var html_d64c66c13587483db3184d2c253175e9 = $(`<div id="html_d64c66c13587483db3184d2c253175e9" style="width: 300.0px; height: 100.0%;"><h4><span style="color: #3366ff;">Org 14 - port : 15900</span></h4> <table style="height: 30px;" width="284"> <tbody> <tr> <td style="width: 169px;"> <h4>MTConnect :</h4> </td> <td style="width: 99px;"><h6><a href="http://starly5.ie.ncsu.edu:15900/current" target="_blank" rel="noopener">Current |</a><a href="http://starly5.ie.ncsu.edu:15900/probe" target="_blank" rel="noopener"> Probe</h6></a></td> </tr> <tr> <td style="width: 169px;"> <h4>Total Machines: </td> <td style="width: 99px;"><b>9</b></td> </tr> <tr> <td style="width: 169px;"> <h4>Capacity Utilization: </td> <td style="width: 99px;"><b>83%</h4></b></td> </tr> </tbody> </table></div>`)[0];
+                popup_b4f01e6e06e14f32b8ad94ecb4cbdfa3.setContent(html_d64c66c13587483db3184d2c253175e9);
+            
+
+            marker_920d246a4bd64d94b9028a45d5f16f10.bindPopup(popup_b4f01e6e06e14f32b8ad94ecb4cbdfa3)
+            ;
+
+            
+        
+    
+        var marker_baf36b16321c42fb96f41f42f2ce98b9 = L.marker(
+            [42.3222599, -83.17631449999998],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_45f961e4ebd54394ad25b33e85eaf541);
+        
+    
+
+                var icon_fcc38cc67d8b412192255b52fe355d4f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_baf36b16321c42fb96f41f42f2ce98b9.setIcon(icon_fcc38cc67d8b412192255b52fe355d4f);
+            
+    
+            var popup_7ce9c269dcb849d6941bd9a8574c9046 = L.popup({maxWidth: '2650'
+            
+            });
+
+            
+                var html_bbdf64d80e394be7bfefb14e9a21137a = $(`<div id="html_bbdf64d80e394be7bfefb14e9a21137a" style="width: 300.0px; height: 100.0%;"><h4><span style="color: #3366ff;">Org 15 - port : 14700</span></h4> <table style="height: 30px;" width="284"> <tbody> <tr> <td style="width: 169px;"> <h4>MTConnect :</h4> </td> <td style="width: 99px;"><h6><a href="http://starly5.ie.ncsu.edu:14700/current" target="_blank" rel="noopener">Current |</a><a href="http://starly5.ie.ncsu.edu:14700/probe" target="_blank" rel="noopener"> Probe</h6></a></td> </tr> <tr> <td style="width: 169px;"> <h4>Total Machines: </td> <td style="width: 99px;"><b>7</b></td> </tr> <tr> <td style="width: 169px;"> <h4>Capacity Utilization: </td> <td style="width: 99px;"><b>0%</h4></b></td> </tr> </tbody> </table></div>`)[0];
+                popup_7ce9c269dcb849d6941bd9a8574c9046.setContent(html_bbdf64d80e394be7bfefb14e9a21137a);
+            
+
+            marker_baf36b16321c42fb96f41f42f2ce98b9.bindPopup(popup_7ce9c269dcb849d6941bd9a8574c9046)
+            ;
+
+            
+        
+    
+        var marker_9bc320b04afc477d892b296036bc935a = L.marker(
+            [38.0193657, -122.1341321],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_45f961e4ebd54394ad25b33e85eaf541);
+        
+    
+
+                var icon_bed0f868657247db984ba74ec2384eb4 = L.AwesomeMarkers.icon({
+                    icon: 'star',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9bc320b04afc477d892b296036bc935a.setIcon(icon_bed0f868657247db984ba74ec2384eb4);
+            
+    
+            var popup_3627b38afaf04459837867a4ee8ad336 = L.popup({maxWidth: '2650'
+            
+            });
+
+            
+                var html_4dc7f9b89cc643f4a5dd0441f4169d9f = $(`<div id="html_4dc7f9b89cc643f4a5dd0441f4169d9f" style="width: 300.0px; height: 100.0%;"><h4><span style="color: #3366ff;">Org 16 - port : 10100</span></h4> <table style="height: 30px;" width="284"> <tbody> <tr> <td style="width: 169px;"> <h4>MTConnect :</h4> </td> <td style="width: 99px;"><h6><a href="http://starly5.ie.ncsu.edu:10100/current" target="_blank" rel="noopener">Current |</a><a href="http://starly5.ie.ncsu.edu:10100/probe" target="_blank" rel="noopener"> Probe</h6></a></td> </tr> <tr> <td style="width: 169px;"> <h4>Total Machines: </td> <td style="width: 99px;"><b>2</b></td> </tr> <tr> <td style="width: 169px;"> <h4>Capacity Utilization: </td> <td style="width: 99px;"><b>100%</h4></b></td> </tr> </tbody> </table></div>`)[0];
+                popup_3627b38afaf04459837867a4ee8ad336.setContent(html_4dc7f9b89cc643f4a5dd0441f4169d9f);
+            
+
+            marker_9bc320b04afc477d892b296036bc935a.bindPopup(popup_3627b38afaf04459837867a4ee8ad336)
+            ;
+
+            
+        
+    
+        var marker_0f76692059c14f77acc7f894ba4dcafe = L.marker(
+            [37.4323341, -121.8995741],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_45f961e4ebd54394ad25b33e85eaf541);
+        
+    
+
+                var icon_bbbf732925384231a457b921d0eac206 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'orange',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0f76692059c14f77acc7f894ba4dcafe.setIcon(icon_bbbf732925384231a457b921d0eac206);
+            
+    
+            var popup_a21ca54fa39a4a6482208e254fbea44a = L.popup({maxWidth: '2650'
+            
+            });
+
+            
+                var html_51afa546b46746c19e1602f86341d2d1 = $(`<div id="html_51afa546b46746c19e1602f86341d2d1" style="width: 300.0px; height: 100.0%;"><h4><span style="color: #3366ff;">Org 17 - port : 10000</span></h4> <table style="height: 30px;" width="284"> <tbody> <tr> <td style="width: 169px;"> <h4>MTConnect :</h4> </td> <td style="width: 99px;"><h6><a href="http://starly5.ie.ncsu.edu:10000/current" target="_blank" rel="noopener">Current |</a><a href="http://starly5.ie.ncsu.edu:10000/probe" target="_blank" rel="noopener"> Probe</h6></a></td> </tr> <tr> <td style="width: 169px;"> <h4>Total Machines: </td> <td style="width: 99px;"><b>5</b></td> </tr> <tr> <td style="width: 169px;"> <h4>Capacity Utilization: </td> <td style="width: 99px;"><b>11%</h4></b></td> </tr> </tbody> </table></div>`)[0];
+                popup_a21ca54fa39a4a6482208e254fbea44a.setContent(html_51afa546b46746c19e1602f86341d2d1);
+            
+
+            marker_0f76692059c14f77acc7f894ba4dcafe.bindPopup(popup_a21ca54fa39a4a6482208e254fbea44a)
+            ;
+
+            
+        
+    
+        var marker_c467e9c1928a427eb8ba18234c5b5548 = L.marker(
+            [36.7282054, -76.5835621],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_45f961e4ebd54394ad25b33e85eaf541);
+        
+    
+
+                var icon_9ee998a3e4e645e196d14082bd4d868a = L.AwesomeMarkers.icon({
+                    icon: 'star',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c467e9c1928a427eb8ba18234c5b5548.setIcon(icon_9ee998a3e4e645e196d14082bd4d868a);
+            
+    
+            var popup_1507ce8361154474acd3ae14d635ec80 = L.popup({maxWidth: '2650'
+            
+            });
+
+            
+                var html_6157eef7d61442f988fb3cbadfb7d9aa = $(`<div id="html_6157eef7d61442f988fb3cbadfb7d9aa" style="width: 300.0px; height: 100.0%;"><h4><span style="color: #3366ff;">Org 18 - port : 13000</span></h4> <table style="height: 30px;" width="284"> <tbody> <tr> <td style="width: 169px;"> <h4>MTConnect :</h4> </td> <td style="width: 99px;"><h6><a href="http://starly5.ie.ncsu.edu:13000/current" target="_blank" rel="noopener">Current |</a><a href="http://starly5.ie.ncsu.edu:13000/probe" target="_blank" rel="noopener"> Probe</h6></a></td> </tr> <tr> <td style="width: 169px;"> <h4>Total Machines: </td> <td style="width: 99px;"><b>6</b></td> </tr> <tr> <td style="width: 169px;"> <h4>Capacity Utilization: </td> <td style="width: 99px;"><b>100%</h4></b></td> </tr> </tbody> </table></div>`)[0];
+                popup_1507ce8361154474acd3ae14d635ec80.setContent(html_6157eef7d61442f988fb3cbadfb7d9aa);
+            
+
+            marker_c467e9c1928a427eb8ba18234c5b5548.bindPopup(popup_1507ce8361154474acd3ae14d635ec80)
+            ;
+
+            
+        
+    
+        var marker_bba229cc4f544ac5991d5e8891b99a88 = L.marker(
+            [35.91319960000001, -79.05584449999998],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_45f961e4ebd54394ad25b33e85eaf541);
+        
+    
+
+                var icon_6727314016bd4f6ca2edf0c5e4dab7d5 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bba229cc4f544ac5991d5e8891b99a88.setIcon(icon_6727314016bd4f6ca2edf0c5e4dab7d5);
+            
+    
+            var popup_2c8e8c4ea0174e1aab5625288e9de9f0 = L.popup({maxWidth: '2650'
+            
+            });
+
+            
+                var html_5cf7189d30244a60a6358738b1d13611 = $(`<div id="html_5cf7189d30244a60a6358738b1d13611" style="width: 300.0px; height: 100.0%;"><h4><span style="color: #3366ff;">Org 19 - port : 15500</span></h4> <table style="height: 30px;" width="284"> <tbody> <tr> <td style="width: 169px;"> <h4>MTConnect :</h4> </td> <td style="width: 99px;"><h6><a href="http://starly5.ie.ncsu.edu:15500/current" target="_blank" rel="noopener">Current |</a><a href="http://starly5.ie.ncsu.edu:15500/probe" target="_blank" rel="noopener"> Probe</h6></a></td> </tr> <tr> <td style="width: 169px;"> <h4>Total Machines: </td> <td style="width: 99px;"><b>6</b></td> </tr> <tr> <td style="width: 169px;"> <h4>Capacity Utilization: </td> <td style="width: 99px;"><b>0%</h4></b></td> </tr> </tbody> </table></div>`)[0];
+                popup_2c8e8c4ea0174e1aab5625288e9de9f0.setContent(html_5cf7189d30244a60a6358738b1d13611);
+            
+
+            marker_bba229cc4f544ac5991d5e8891b99a88.bindPopup(popup_2c8e8c4ea0174e1aab5625288e9de9f0)
+            ;
+
+            
+        
+    
+        var marker_cda96dda1f0d4ca692bdbe43e36cbcc2 = L.marker(
+            [41.91252859999999, -88.13479269999998],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_45f961e4ebd54394ad25b33e85eaf541);
+        
+    
+
+                var icon_f66fda5af28a48f0ba47212dfbfd99e1 = L.AwesomeMarkers.icon({
+                    icon: 'star',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_cda96dda1f0d4ca692bdbe43e36cbcc2.setIcon(icon_f66fda5af28a48f0ba47212dfbfd99e1);
+            
+    
+            var popup_a9a267231d1e48a9b65874e1a702955e = L.popup({maxWidth: '2650'
+            
+            });
+
+            
+                var html_be09543ddf9149a3bbefdccd1b70f97f = $(`<div id="html_be09543ddf9149a3bbefdccd1b70f97f" style="width: 300.0px; height: 100.0%;"><h4><span style="color: #3366ff;">Org 20 - port : 15200</span></h4> <table style="height: 30px;" width="284"> <tbody> <tr> <td style="width: 169px;"> <h4>MTConnect :</h4> </td> <td style="width: 99px;"><h6><a href="http://starly5.ie.ncsu.edu:15200/current" target="_blank" rel="noopener">Current |</a><a href="http://starly5.ie.ncsu.edu:15200/probe" target="_blank" rel="noopener"> Probe</h6></a></td> </tr> <tr> <td style="width: 169px;"> <h4>Total Machines: </td> <td style="width: 99px;"><b>4</b></td> </tr> <tr> <td style="width: 169px;"> <h4>Capacity Utilization: </td> <td style="width: 99px;"><b>100%</h4></b></td> </tr> </tbody> </table></div>`)[0];
+                popup_a9a267231d1e48a9b65874e1a702955e.setContent(html_be09543ddf9149a3bbefdccd1b70f97f);
+            
+
+            marker_cda96dda1f0d4ca692bdbe43e36cbcc2.bindPopup(popup_a9a267231d1e48a9b65874e1a702955e)
+            ;
+
+            
+        
+</script>
